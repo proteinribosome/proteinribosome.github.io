@@ -5,7 +5,10 @@
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #000000;
+            /* Creates a beautiful, smooth diagonal rainbow gradient */
+            background: linear-gradient(135deg, #ff2a54, #ff9500, #ffcc00, #4cd964, #5ac8fa, #057fff, #7852ff);
+            background-size: 400% 400%;
+            animation: rainbowBG 5s ease infinite;
             color: #333;
             display: flex;
             flex-direction: column;
@@ -15,18 +18,26 @@
             margin: 0;
         }
 
+        /* Subtle animation to make the rainbow colors slowly shift and flow */
+        @keyframes rainbowBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
         .card {
-            background: white;
+            background: rgba(255, 255, 255, 0.95);
             padding: 35px;
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
             text-align: center;
             max-width: 400px;
             width: 90%;
+            backdrop-filter: blur(10px);
         }
 
         h1 {
-            font-size: 22px;
+            font-size: 24px;
             color: #111;
             margin-bottom: 8px;
             font-weight: 700;
@@ -36,6 +47,9 @@
             font-size: 14px;
             color: #666;
             margin-bottom: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
         }
 
         audio {
