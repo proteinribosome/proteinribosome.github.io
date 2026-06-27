@@ -17,41 +17,44 @@
 
         .card {
             background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
             text-align: center;
             max-width: 400px;
             width: 90%;
         }
 
         h1 {
-            font-size: 24px;
+            font-size: 22px;
             color: #111;
-            margin-bottom: 20px;
+            margin-bottom: 8px;
+            font-weight: 700;
         }
 
-        .btn {
-            display: inline-block;
-            background-color: #007aff;
-            color: white;
-            text-decoration: none;
-            padding: 12px 24px;
+        .subtitle {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 24px;
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 10px;
             border-radius: 8px;
-            font-weight: 600;
-            transition: background-color 0.2s ease;
-        }
-
-        .btn:hover {
-            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <h1>New song, 王嘉明是gay, is out today!</h1>
-        <a class="btn" href="https://cdn.discordapp.com/attachments/1327094813257895937/1520312175237927004/Gay.mp3?ex=6a40bc8c&is=6a3f6b0c&hm=dfa42e00d7e6f88bbb9a27bb869c4ac8143e9ddcea482a20cb7f9560bcf0c436&">Click here to download</a>
+        <h1>王嘉明是gay</h1>
+        <p class="subtitle">New Single Out Now</p>
+        
+        <audio controls>
+            <source src="https://cdn.discordapp.com/attachments/1327094813257895937/1520312175237927004/Gay.mp3?ex=6a40bc8c&is=6a3f6b0c&hm=dfa42e00d7e6f88bbb9a27bb869c4ac8143e9ddcea482a20cb7f9560bcf0c436&" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
     </div>
 
 </body>
