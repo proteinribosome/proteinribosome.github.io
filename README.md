@@ -1,3 +1,3 @@
-website for the dumbest ass in the world
+website for the dumbest gayass in the world
 
 [Visit the website](https://proteinribosome.github.io/)
